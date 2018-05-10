@@ -6,8 +6,8 @@ t = time.localtime()
 h=t[3]
 m= t[4]
 s= t[5]+1
-x="pm"
-y="am"
+x="am"
+y="pm"
 c = y
 while s<61:
         print("Time Ecuador: ",h,":",m,":",s,c)
@@ -26,7 +26,14 @@ while s<61:
                         h=1
                         c=y
                     
-            
+import time
+t=time.localtime()
+x=t[8]
+
+while (x!=60):
+    t=time.localtime()
+    print(t[3],":",t[4],":",t[5])
+    time.sleep(1)
                 
 
                 
